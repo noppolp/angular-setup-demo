@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="bower_components/angular/angular.js"></script>
+
+    <script>
+        var myApp = angular.module('myApp', []);
+        myApp.controller('myController', ['$scope', function ($scope) {
+           $scope.hello = "Hello AngularJS!";
+        }]);
+    </script>
+</head>
+<body ng-controller="myController">
+    <h1>{{hello}}</h1>
+</body>
+</html>
